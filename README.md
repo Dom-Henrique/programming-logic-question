@@ -3,10 +3,11 @@ In this repository, you'll found resolution of all Algorithms and Programming Lo
 # How this repository is divided
 ```
 📁 input-output
-// Come back soon!
+📁 conditionals
 ```
 Organized by folders, you can find exercices by focus.
 
 ```input-output``` - data values, printf, scanf, etc.
+```conditionals``` - if, else if, else
 
 ***Dom Henrique, British English (B2)***
