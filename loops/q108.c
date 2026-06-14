@@ -8,29 +8,40 @@ Neste  programa,  considere  os  seguintes  números  de  partido:  13  (PT),  1
 (PMDB), 25 (DEM), 45 (PSDB) e 65( PCdoB)*/
 
 #include <stdio.h>
+#include <math.h>
+
 int const MIN = 1;
-int const MAX = 9;
+int const MAX = 5;
 
 void main()
 {
     int n, candidato, PT = 0, PTB = 0, PMDB = 0, DEM = 0, PSDB = 0, PCdoB = 0;
-    for (int i = MIN; i < MAX; i++)
+    for (int i = MIN; i <= MAX; i++)
     {
         printf("Numero do candidato: ");
         scanf("%d", &n);
-        candidato = n / 10000;
-        if (candidato == 13)
-            PT++;
-        else if (candidato == 14)
-            PTB++;
-        else if (candidato == 15)
-            PMDB++;
-        else if (candidato == 25)
-            DEM++;
-        else if (candidato == 45)
-            PSDB++;
-        else if (candidato == 65)
-            PCdoB++;
+        candidato = floor(n / 1000);
+        switch (candidato)
+        {
+        case 13:
+            PT += 1;
+            break;
+        case 14:
+            PTB += 1;
+            break;
+        case 15:
+            PMDB += 1;
+            break;
+        case 25:
+            DEM += 1;
+            break;
+        case 45:
+            PSDB += 1;
+            break;
+        case 65:
+            PCdoB += 1;
+            break;
+        }
     }
-    printf("PT: %d\nPT: %d\nPTB: %d\nPMDB: %d\nDEM: %d\nPSDB: %d\nPCdoB: %d\n", PT, PTB, PMDB, DEM, PSDB, PCdoB);
+    printf("PT: %d % \nPTB: %d % \nPMDB: %d % \nDEM: %d % \nPSDB: %d % \nPCdoB: %d % \n", (float) PT/(MAX-MIN), (float) PTB/(MAX-MIN), (float) PMDB/(MAX-MIN), (float) DEM/(MAX-MIN), (float) PSDB/(MAX-MIN), (float) PCdoB/(MAX-MIN));
 }
