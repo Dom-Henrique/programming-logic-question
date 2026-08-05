@@ -6,6 +6,8 @@ In this repository, you'll found resolution of all Algorithms and Programming Lo
 📁 conditionals
 📁 loops
 📁 vectors-matrixes
+📁 subprograms
+📁 recursiviness
 ```
 Organized by folders, you can find exercices by focus.
 
@@ -18,6 +20,11 @@ Organized by folders, you can find exercices by focus.
 ```loops``` - for, while, do-while
 
 
-```vectors-matrixes``` - arrays
+```vectors-matrixes``` - vectors and matrixes
+
+
+```subprograms``` - functions, procediments
+
+```recursiviness``` - call the function inside function
 
 ***Dom Henrique, British English (B2)***
