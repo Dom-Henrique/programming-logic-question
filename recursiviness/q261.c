@@ -6,8 +6,6 @@ int fatorial(int n){
     return n*fatorial(n-1);
 }
 void main(){
-    int naosei;
-    scanf("%d", &naosei);
-    int f = fatorial(naosei);
+    int f = fatorial(4);
     printf("%d", f);
 }

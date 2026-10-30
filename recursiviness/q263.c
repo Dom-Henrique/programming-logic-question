@@ -3,7 +3,7 @@ positivo e provoque um salto de N linhas na tela do usuário.*/
 #include <stdio.h>
 void brokenLines(int n)
 {
-    if (n != 0)
+    if (n > 0)
     {
         printf("__________\n");
         brokenLines(n - 1);
@@ -11,7 +11,7 @@ void brokenLines(int n)
 }
 void main()
 {
-    int n;
-    scanf("%d", &n);
-    brokenLines(n);
+    // int n;
+    // scanf("%d", &n);
+    brokenLines(5);
 }
